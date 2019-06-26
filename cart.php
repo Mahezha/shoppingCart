@@ -31,6 +31,9 @@ if (filter_input(INPUT_POST, 'add_to_cart')){
     );
     }
 }
+if (filter_input(INPUT_GET, 'action') == 'delete'){
+    
+}
 //pre_r($_SESSION);
 
 function pre_r($array){
