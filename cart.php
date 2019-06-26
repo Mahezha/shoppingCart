@@ -107,7 +107,22 @@ function pre_r($array){
                         foreach ($_SESSION['shopping_cart'] as $key => $product);
                     ?>
                     <tr>
-                        <td
+                        <td><?php echo $product['name']; ?></td>
+                        <td><?php echo $product['quantity']; ?></td>
+                        <td><?php echo $product['price']; ?></td>
+                        <td><?php echo numfmt_format($product['quantity'] * $product['price'], 2); ?></td>
+                        <td>
+                            <a href="cart.php?action=delete&id=<?php echo $product['id']; ?>">
+                                <div class="btn-danger">Remove</div>
+                            </a>
+                        </td>
+                    </tr>
+                    <?php
+                            $total = $total + ($product['quantity'] * $product['price']);
+                        endforeach;
+                    ?>
+                    <tr>
+                        <td colspan="3" align="right"></td>
                     </tr>
                 </table>
             </div>
