@@ -122,8 +122,23 @@ function pre_r($array){
                         endforeach;
                     ?>
                     <tr>
-                        <td colspan="3" align="right"></td>
+                        <td colspan="3" align="right">Total</td>
+                        <td align="right">$ <?php echo number_format($total,2); ?></td>
+                        <td></td>
                     </tr>
+                    <tr>
+                        <td colspan="5">
+                            <?php
+                            if (isset($_SESSION['shopping_cart']));
+                            if (count($_SESSION['shopping_cart']) > 0);
+                            ?>
+                            <a href="#" class="button">Checkout</a>
+                            <?php endif; endif; ?>
+                        </td>
+                    </tr>
+                    <?php
+                            endif;
+                    ?>
                 </table>
             </div>
         </div>
