@@ -8,3 +8,26 @@
 body{
     padding: 1%;
 }
+.table{
+    margin: 0px auto;
+    float: none;
+}
+.row{
+    margin: 0px auto;
+    float: none;
+}
+.centered{
+    float: none;
+    margin: 0 auto;
+}
+.button{
+    background: #6394f8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 25px 0 15px 0;
+}

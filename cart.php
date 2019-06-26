@@ -119,7 +119,7 @@ function pre_r($array){
                     </tr>
                     <?php
                             $total = $total + ($product['quantity'] * $product['price']);
-                        endforeach;
+                        //endforeach;
                     ?>
                     <tr>
                         <td colspan="3" align="right">Total</td>
@@ -133,11 +133,11 @@ function pre_r($array){
                             if (count($_SESSION['shopping_cart']) > 0);
                             ?>
                             <a href="#" class="button">Checkout</a>
-                            <?php endif; endif; ?>
+                            <?php //endif; endif; ?>
                         </td>
                     </tr>
                     <?php
-                            endif;
+                           // endif;
                     ?>
                 </table>
             </div>
