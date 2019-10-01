@@ -147,7 +147,7 @@ function pre_r($array){
                         </td>
                     </tr>
                     <?php
-                           // endif;
+                           // end if ;
                     ?>
                 </table>
             </div>
