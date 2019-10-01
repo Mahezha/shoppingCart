@@ -1,4 +1,6 @@
 <?php
+
+//Initial State
 session_start();
 $product_ids = array();
 session_destroy();
